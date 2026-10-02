@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en"><head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#101710"><meta name="description" content="Explore Minecraft technical play: commands, command blocks, datapacks, world generation, Redstone, farms, mechanics, minigames and servers.">
+  <title>Minecraft Technical Guide — Overworld</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"><script src="js/script.js" defer></script>
+</head><body data-page="technical">
+<a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html"><span class="brand-mark">O</span><span>OVERWORLD.<small>A MINECRAFT FIELD GUIDE</small></span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation"><span></span><span></span></button><nav class="primary-nav" id="primary-navigation" aria-label="Main navigation"><a data-page-link="home" href="index.html">Home</a><a data-page-link="story" href="story.html">Story</a><a data-page-link="mobs" href="mobs.html">Mobs</a><a data-page-link="shaders" href="shaders.html">Shaders</a><a data-page-link="farlands" href="farlands.html">Far Lands</a><a data-page-link="community" href="community.html">Community</a><details class="nav-more"><summary>More worlds</summary><div class="nav-more-menu"><a data-page-link="youtubers" href="youtubers.html">YouTubers</a><a data-page-link="servers" href="servers.html">Servers</a><a data-page-link="lore" href="lore.html">Lore</a><a data-page-link="how-to-play" href="how-to-play.html">How to Play</a><a data-page-link="updates" href="updates.html">Updates &amp; Future</a><a data-page-link="music" href="music.html">Music &amp; Sound</a><a data-page-link="impact" href="impact.html">Impact</a></div></details></nav></div></header>
+<main id="main">
+  <section class="page-hero"><div class="container page-hero-inner"><div><p class="page-kicker">13 / THE TECHNICAL SIDE · LOOK UNDER THE BLOCK</p><h1>What if the world<br><em>ran on your ideas?</em></h1></div><p class="page-intro">Technical Minecraft is a sandbox inside the sandbox. Learn the game’s systems, connect Redstone, automate tasks, study terrain generation and build experiences other players can try.</p></div></section>
+  <section class="section section-alt"><div class="container"><div class="section-heading"><div><p class="eyebrow"><strong>A MAP OF THE SYSTEMS</strong></p><h2>Learn a mechanic.<br><span class="display-accent">Connect a few.</span></h2></div><p class="section-lead">This overview organizes the 14 technical topics from the supplied chapter. The complete original descriptions appear below in the expandable source archive.</p></div><div class="feature-matrix">
+    <article class="feature-cell"><span>01 / INPUT</span><h3>Commands</h3><p>Use command syntax to control game actions and automate custom experiences.</p></article><article class="feature-cell"><span>02 / LOGIC</span><h3>Command blocks</h3><p>Trigger commands from a world’s mechanisms and custom challenges.</p></article><article class="feature-cell"><span>03 / CUSTOM</span><h3>Datapacks</h3><p>Organize custom functions and rules to expand world behavior.</p></article><article class="feature-cell"><span>04 / TERRAIN</span><h3>World generation</h3><p>Seeds and generation systems shape terrain, structures, resources and biomes.</p></article><article class="feature-cell"><span>05 / CIRCUITS</span><h3>Redstone</h3><p>Connect signals, components and mechanisms into interactive machines.</p></article><article class="feature-cell"><span>06 / DETAILS</span><h3>Game mechanics</h3><p>Study mob behavior, item movement, farming, timing, trading, combat and blocks.</p></article><article class="feature-cell"><span>07 / SYSTEMS</span><h3>Automatic farms</h3><p>Use game mechanics and parts such as water, hoppers and pistons to produce resources.</p></article><article class="feature-cell"><span>08 / PRACTICE</span><h3>Technical Minecraft</h3><p>Investigate how the game works; share results and turn experiments into builds.</p></article><article class="feature-cell"><span>09 / CUSTOM PLAY</span><h3>Minigames</h3><p>Build racing, puzzle, parkour, combat, treasure-hunt and team challenges.</p></article><article class="feature-cell"><span>10 / SERVERS</span><h3>Technical multiplayer</h3><p>Combine server tools, permissions, events, rewards, statistics and game areas.</p></article><article class="feature-cell"><span>11 / TESTING</span><h3>Experiments</h3><p>Try mechanisms and mechanics in a separate world; isolate components when debugging.</p></article><article class="feature-cell"><span>12 / INTEGRATION</span><h3>Combine systems</h3><p>Mix command blocks, datapacks and Redstone into larger interactive designs.</p></article>
+    <article class="feature-cell"><span>13 / CHALLENGE</span><h3>Technical projects</h3><p>Take on demanding builds such as complex automated farms or large Redstone machines.</p></article><article class="feature-cell"><span>14 / SANDBOX</span><h3>More than one kind of game</h3><p>Use Minecraft as a building game, survival game, exploration game, engineering sandbox, programming-like environment, testing space or multiplayer platform.</p></article>
+  </div></div></section>
+  <section class="section section-dark"><div class="container grid grid-2"><div><p class="eyebrow"><strong>REDSTONE / TEST BENCH</strong></p><h2>Switch on a<br><span class="display-accent">tiny circuit.</span></h2><p class="body-copy">This small on-page demo is only a visual illustration: click the switch and the lamp changes. In Minecraft, Redstone can power doors, farms, sorting systems, clocks, automatic lights and much more.</p><button class="button" type="button" data-circuit-switch aria-pressed="false">Power the circuit <span aria-hidden="true">↗</span></button></div><div class="card circuit-card"><div class="circuit-visual" aria-live="polite"><span class="circuit-line"></span><span class="circuit-switch" aria-hidden="true">■</span><span class="circuit-node" aria-hidden="true">▦</span><span class="circuit-lamp" data-circuit-lamp aria-label="Lamp off">●</span></div><p class="circuit-status" data-circuit-status>Power: off · lamp unlit</p></div></div></section>
+  <section class="section section-stone"><div class="container"><div class="section-heading"><div><p class="eyebrow"><strong>MAKE IT USEFUL</strong></p><h2>From one signal<br><span class="display-accent">to a whole machine.</span></h2></div></div><div class="grid grid-3">
+    <article class="card"><span class="card-tag">AUTOMATION</span><h3>Farms &amp; storage.</h3><p>The original chapter lists crops, food, wood, experience, mob drops and building materials among resources produced by farms. Redstone, villagers, pistons, hoppers, water and observers can play a part.</p></article>
+    <article class="card"><span class="card-tag">GAME MECHANICS</span><h3>Understand why it works.</h3><p>Mob behavior, item movement, Redstone timing, farming, villagers, block interactions, movement, resource generation, combat and world generation all create opportunities for technical design.</p></article>
+    <article class="card"><span class="card-tag">CUSTOM EXPERIENCES</span><h3>Build another game.</h3><p>Custom maps use commands, datapacks and mechanisms for racing, puzzles, survival, parkour, adventure, team games, treasure hunts and custom boss encounters.</p></article>
+    <article class="card"><span class="card-tag">MULTIPLAYER SYSTEMS</span><h3>Give a server structure.</h3><p>Server tools can manage permissions, minigames, teleportation, events, rewards, statistics, challenges and separate areas.</p><a class="inline-link" href="servers.html">Explore servers <span>→</span></a></article>
+    <article class="card"><span class="card-tag">SAFE EXPERIMENTS</span><h3>Test outside your main world.</h3><p>The supplied chapter recommends a test world for experimenting with circuits, commands, mobs, farms, explosions, datapacks and rules. Isolate a mechanism’s parts to troubleshoot it.</p></article>
+    <article class="card"><span class="card-tag">ENGINEERING MINDSET</span><h3>Connect the systems.</h3><p>Technical builds become more capable when Redstone signals, command blocks and datapacks work together.</p></article>
+  </div></div></section>
+<section class="section section-source-archive" id="original-source"><div class="container">
+<p class="eyebrow"><strong>COMPLETE ORIGINAL CHAPTERS</strong></p>
+<div class="section-heading"><div><h2>The full source.<br><span class="display-accent">Every detail, in its place.</span></h2></div><p class="section-lead">These expandable chapters preserve the supplied Minecraft document original information, examples, lists and conclusions. Open a chapter, then any section within it.</p></div>
+<p class="note archive-notice"><strong>Source note:</strong> Text below is transcribed from the supplied project document and has not been fact-checked as current game guidance. Version-specific or speculative statements remain in their original context.</p>
+<nav class="archive-index" aria-label="Original source chapters">
+<a href="#source-minecraft-s-technical-side">Minecraft&#39;s Technical Side <span aria-hidden="true">↘</span></a>
+</nav><div class="archive-chapters">
+<details class="archive-chapter" id="source-minecraft-s-technical-side"><summary><span class="archive-chapter-name">Minecraft&#39;s Technical Side</span><span class="archive-chapter-count">226 source paragraphs</span></summary><div class="archive-chapter-body">
+<details class="archive-subsection archive-level-1"><summary>Minecraft&#39;s Technical Side</summary><div class="archive-subsection-body">
+<p>Minecraft may look like a simple block-building game, but behind its simple appearance is a large number of systems that control how the game works. Advanced players can use these systems to change gameplay, create automated machines, build custom challenges, and even create experiences that feel completely different from normal Minecraft. Commands, command blocks, datapacks, world generation, Redstone, and different game mechanics all give players a lot of control over the game.</p>
+<details class="archive-subsection archive-level-2"><summary>1. Commands</summary><div class="archive-subsection-body">
+<p>Commands are special instructions that can be entered into Minecraft to perform different actions. They are mainly used by players who want more control over their worlds, servers, maps, or experiments.</p>
+<p>Commands can be used to:</p>
+<p>Change the time of day.</p>
+<p>Change the weather.</p>
+<p>Teleport players to different locations.</p>
+<p>Give players items.</p>
+<p>Apply effects to players and mobs.</p>
+<p>Change certain game rules.</p>
+<p>Summon mobs and other entities.</p>
+<p>Change the difficulty of the game.</p>
+<p>Control different parts of a world.</p>
+<p>Create special events and challenges.</p>
+<p>Help players manage multiplayer worlds and servers.</p>
+<p>Commands are especially useful because they can perform actions that would normally take a long time to do manually. For example, instead of travelling a long distance, a player can use a teleport command to move directly to another location.</p>
+<p>Commands are also useful for testing. Players can quickly create situations that would be difficult to reproduce naturally. They can summon different mobs, change the time, give themselves items, or experiment with different game mechanics.</p>
+<p>Because of this, commands are an important part of Minecraft&#39;s technical side.</p>
+</div></details>
+<details class="archive-subsection archive-level-2"><summary>2. Command Blocks</summary><div class="archive-subsection-body">
+<p>Command blocks are blocks that can execute commands automatically. They are commonly used in adventure maps, minigames, challenges, and custom Minecraft worlds.</p>
+<p>A command block can be connected to different systems so that a command happens when a certain condition is met. Multiple command blocks can also be connected together to create complicated sequences of events.</p>
+<p>For example, a custom map could use command blocks to:</p>
+<p>Open a door after a player completes a task.</p>
+<p>Teleport a player to another area.</p>
+<p>Start an event.</p>
+<p>Give rewards.</p>
+<p>Spawn enemies.</p>
+<p>Create special challenges.</p>
+<p>Display messages.</p>
+<p>Change the environment.</p>
+<p>Keep track of player actions.</p>
+<p>Command blocks can become much more powerful when combined with Redstone. A Redstone circuit can activate a command block when a player presses a button, steps on a pressure plate, activates a switch, or triggers another mechanism.</p>
+<p>This allows players to create systems that respond automatically to what happens in the game.</p>
+<p>Large command-block systems can contain many commands working together. This makes them useful for creating custom minigames and adventure maps without changing the game&#39;s main program.</p>
+</div></details>
+<details class="archive-subsection archive-level-2"><summary>3. Datapacks</summary><div class="archive-subsection-body">
+<p>Datapacks are another way players can change and customize Minecraft. They allow certain game features to be changed or added without using traditional game modifications.</p>
+<p>Datapacks can contain different types of information and functions that control how certain parts of the game behave.</p>
+<p>They can be used to create:</p>
+<p>Custom recipes.</p>
+<p>New advancements.</p>
+<p>Custom loot tables.</p>
+<p>Special functions.</p>
+<p>Custom gameplay mechanics.</p>
+<p>New challenges.</p>
+<p>Changes to existing game systems.</p>
+<p>Automatic events.</p>
+<p>One advantage of datapacks is that they can be used to customize a world while keeping the normal Minecraft environment.</p>
+<p>For example, a datapack could change the way certain items are obtained or create a special challenge where players have to complete specific objectives.</p>
+<p>Advanced players can combine datapacks with commands and other Minecraft systems. This makes it possible to create complicated gameplay features without needing to modify the entire game.</p>
+<p>Datapacks have therefore become an important tool for players who want to experiment with Minecraft&#39;s mechanics.</p>
+</div></details>
+<details class="archive-subsection archive-level-2"><summary>4. World Generation</summary><div class="archive-subsection-body">
+<p>One of Minecraft&#39;s most important technical systems is world generation. Every Minecraft world is created using systems that determine the terrain, biomes, structures, caves, and many other features.</p>
+<p>When a new world is created, Minecraft generates a large environment for the player to explore. This environment can contain:</p>
+<p>Mountains.</p>
+<p>Plains.</p>
+<p>Forests.</p>
+<p>Deserts.</p>
+<p>Oceans.</p>
+<p>Caves.</p>
+<p>Rivers.</p>
+<p>Villages.</p>
+<p>Structures.</p>
+<p>Different types of terrain.</p>
+<p>Underground areas.</p>
+<p>A seed is used to determine how much of the world&#39;s generation will look. Different seeds can create very different worlds.</p>
+<p>This means that two players can create a new world using different seeds and get completely different landscapes.</p>
+<p>World generation is also connected to many of Minecraft&#39;s other systems. Terrain affects where structures appear, where players can find resources, and what kinds of environments they encounter.</p>
+<p>Advanced players sometimes study world generation to understand how the game creates different features. This can be useful for technical Minecraft, speedrunning, exploration, and finding resources.</p>
+<p>The world-generation system is one of the reasons Minecraft can create enormous worlds that feel different from one another.</p>
+</div></details>
+<details class="archive-subsection archive-level-2"><summary>5. Redstone and Technical Machines</summary><div class="archive-subsection-body">
+<p>Redstone is one of the most important parts of technical Minecraft. It allows players to create circuits and machines that perform actions automatically.</p>
+<p>Redstone can be used to build:</p>
+<p>Doors.</p>
+<p>Elevators.</p>
+<p>Farms.</p>
+<p>Automatic storage systems.</p>
+<p>Traps.</p>
+<p>Sorting systems.</p>
+<p>Transportation systems.</p>
+<p>Clocks.</p>
+<p>Calculators.</p>
+<p>Automatic lights.</p>
+<p>Complex machines.</p>
+<p>Simple Redstone systems can be understood relatively quickly, but advanced systems can become extremely complicated.</p>
+<p>Players can connect many different components together to create machines that perform multiple actions. Some machines can detect when an item enters a system, move the item to another location, and automatically sort it.</p>
+<p>Redstone can also be combined with commands and command blocks. This allows players to create systems where physical Minecraft mechanisms interact with commands.</p>
+<p>For many technical players, Redstone becomes almost like engineering inside Minecraft.</p>
+</div></details>
+<details class="archive-subsection archive-level-2"><summary>6. Game Mechanics</summary><div class="archive-subsection-body">
+<p>Minecraft contains many small mechanics that are not immediately obvious to new players. Advanced players often learn these mechanics in detail so they can use the game more efficiently.</p>
+<p>These mechanics can involve:</p>
+<p>Mob behaviour.</p>
+<p>Item movement.</p>
+<p>Redstone timing.</p>
+<p>Farming.</p>
+<p>Villager behaviour.</p>
+<p>Block interactions.</p>
+<p>Movement.</p>
+<p>Resource generation.</p>
+<p>Combat systems.</p>
+<p>World generation.</p>
+<p>Automatic machines.</p>
+<p>Understanding these mechanics can make a large difference in technical gameplay.</p>
+<p>For example, a player who understands how certain mobs behave can design a farm that automatically produces useful resources. A player who understands item movement can build a storage system that sorts items automatically.</p>
+<p>Technical players often experiment with these mechanics to discover efficient ways of doing things.</p>
+</div></details>
+<details class="archive-subsection archive-level-2"><summary>7. Automatic Farms</summary><div class="archive-subsection-body">
+<p>Automatic farms are one of the most common examples of technical Minecraft.</p>
+<p>A normal farm requires the player to plant, grow, and collect crops manually. An automatic farm uses Minecraft&#39;s mechanics to perform some or most of these tasks automatically.</p>
+<p>Players can create farms for different resources, including:</p>
+<p>Crops.</p>
+<p>Food.</p>
+<p>Wood.</p>
+<p>Experience.</p>
+<p>Mob drops.</p>
+<p>Certain building materials.</p>
+<p>Other useful resources.</p>
+<p>These farms can use Redstone, villagers, pistons, hoppers, water, observers, and other components.</p>
+<p>The goal of an automatic farm is usually to reduce the amount of repetitive work the player has to do.</p>
+<p>Some farms are very simple, while others are extremely complicated and require a detailed understanding of Minecraft&#39;s mechanics.</p>
+</div></details>
+<details class="archive-subsection archive-level-2"><summary>8. Technical Minecraft</summary><div class="archive-subsection-body">
+<p>Technical Minecraft is a part of the Minecraft community that focuses heavily on understanding and using the game&#39;s mechanics.</p>
+<p>Technical players often study the game in great detail. Instead of only building structures or exploring the world, they may spend a large amount of time testing how different systems work.</p>
+<p>Technical players can investigate:</p>
+<p>Redstone mechanics.</p>
+<p>Mob spawning.</p>
+<p>Farming systems.</p>
+<p>Game rules.</p>
+<p>World generation.</p>
+<p>Commands.</p>
+<p>Item mechanics.</p>
+<p>Villager behaviour.</p>
+<p>Performance.</p>
+<p>Resource production.</p>
+<p>Some technical players build large machines designed to produce huge amounts of resources automatically.</p>
+<p>Technical Minecraft shows that the game can be played in very different ways. A player can simply build a small house, while another player can spend months designing a complicated technical system.</p>
+</div></details>
+<details class="archive-subsection archive-level-2"><summary>9. Custom Minigames</summary><div class="archive-subsection-body">
+<p>Minecraft&#39;s technical systems can also be used to create completely different games inside Minecraft.</p>
+<p>Using commands, command blocks, datapacks, Redstone, and other systems, players can create custom minigames.</p>
+<p>These can include:</p>
+<p>Racing games.</p>
+<p>Puzzle games.</p>
+<p>Survival challenges.</p>
+<p>Parkour challenges.</p>
+<p>Adventure maps.</p>
+<p>Team-based games.</p>
+<p>Combat challenges.</p>
+<p>Treasure hunts.</p>
+<p>Custom boss battles.</p>
+<p>A custom minigame can use commands to control what happens during the game.</p>
+<p>For example, a map could automatically detect when a player reaches a certain location and then start the next part of the challenge.</p>
+<p>This gives Minecraft a lot of flexibility. Players are not limited to the normal gameplay provided by the game.</p>
+</div></details>
+<details class="archive-subsection archive-level-2"><summary>10. Technical Multiplayer Servers</summary><div class="archive-subsection-body">
+<p>Technical systems are also important on multiplayer servers.</p>
+<p>Server owners and developers can use commands, datapacks, plugins, and other systems to create special features for their players.</p>
+<p>These systems can control:</p>
+<p>Player permissions.</p>
+<p>Minigames.</p>
+<p>Teleportation.</p>
+<p>Server events.</p>
+<p>Rewards.</p>
+<p>Custom gameplay.</p>
+<p>Statistics.</p>
+<p>Challenges.</p>
+<p>Different game areas.</p>
+<p>Large servers can contain many different systems working at the same time.</p>
+<p>This makes Minecraft multiplayer more than simply placing several players into the same world. Servers can become large communities with their own gameplay systems and rules.</p>
+</div></details>
+<details class="archive-subsection archive-level-2"><summary>11. Experimenting With Minecraft</summary><div class="archive-subsection-body">
+<p>One of the most interesting parts of Minecraft&#39;s technical side is experimentation.</p>
+<p>Players can create a test world and try different things without worrying about losing their main survival world.</p>
+<p>They can test:</p>
+<p>Redstone circuits.</p>
+<p>Commands.</p>
+<p>Mob behaviour.</p>
+<p>Farms.</p>
+<p>Explosions.</p>
+<p>Building mechanisms.</p>
+<p>Datapacks.</p>
+<p>Different game rules.</p>
+<p>World-generation features.</p>
+<p>Experimentation can also help players understand why something works.</p>
+<p>For example, if a Redstone machine does not work correctly, a player can separate its components and test them individually. This is similar to troubleshooting a real technical system.</p>
+<p>Minecraft therefore gives players a way to learn through trial and error.</p>
+</div></details>
+<details class="archive-subsection archive-level-2"><summary>12. Combining Different Systems</summary><div class="archive-subsection-body">
+<p>The real power of Minecraft&#39;s technical side appears when different systems are combined.</p>
+<p>A player does not have to use only Redstone, commands, or datapacks. They can combine them to create much more advanced systems.</p>
+<p>For example:</p>
+<p>Redstone + Command Blocks</p>
+<p>Redstone can activate command blocks, allowing physical mechanisms to trigger commands.</p>
+<p>Commands + Datapacks</p>
+<p>Datapacks can organize functions and commands to create more complex gameplay systems.</p>
+<p>Redstone + Automatic Farms</p>
+<p>Redstone can control machines that automatically collect and move resources.</p>
+<p>World Generation + Technical Gameplay</p>
+<p>Players can study how the world is generated to find useful locations or understand how certain features appear.</p>
+<p>By combining these systems, players can create machines and gameplay features that would seem impossible in ordinary survival gameplay.</p>
+</div></details>
+<details class="archive-subsection archive-level-2"><summary>13. Technical Challenges</summary><div class="archive-subsection-body">
+<p>Minecraft&#39;s technical systems can also become a challenge by themselves.</p>
+<p>Some players deliberately give themselves difficult technical projects, such as building a complicated automated farm or creating a large Redstone machine.</p>
+<p>These projects can require:</p>
+<p>Planning.</p>
+<p>Testing.</p>
+<p>Problem solving.</p>
+<p>Patience.</p>
+<p>Knowledge of game mechanics.</p>
+<p>Understanding of Redstone.</p>
+<p>Careful construction.</p>
+<p>A large technical project may take a long time to complete because even a small mistake can cause an entire system to stop working.</p>
+<p>Fixing these problems is part of the challenge.</p>
+</div></details>
+<details class="archive-subsection archive-level-2"><summary>14. Minecraft as a Technical Sandbox</summary><div class="archive-subsection-body">
+<p>Minecraft is often described as a sandbox game because players have a large amount of freedom.</p>
+<p>Its technical systems take this idea even further.</p>
+<p>A player can use Minecraft as:</p>
+<p>A building game.</p>
+<p>A survival game.</p>
+<p>An exploration game.</p>
+<p>An engineering sandbox.</p>
+<p>A programming-like environment.</p>
+<p>A testing environment.</p>
+<p>A multiplayer platform.</p>
+<p>A place for creating custom games.</p>
+<p>The game does not force every player to use its technical features. They are available for players who want to explore them.</p>
+<p>This is one of the reasons Minecraft has remained interesting to different types of players for so long.</p>
+</div></details>
+<details class="archive-subsection archive-level-2"><summary>Conclusion</summary><div class="archive-subsection-body">
+<p>Minecraft&#39;s technical side shows that the game is much more complicated than its simple block-based appearance suggests. Commands, command blocks, datapacks, Redstone, world generation, game mechanics, and automatic machines allow players to control and experiment with many parts of the game.</p>
+<p>Advanced players can use these systems to create farms, machines, minigames, adventure maps, and custom gameplay experiences. They can also study the game&#39;s mechanics to understand how different systems work and find more efficient ways to play.</p>
+<p>The technical side of Minecraft turns the game into more than just a world made of blocks. It gives players the freedom to experiment, solve problems, build complex systems, and create their own ideas inside the game.</p>
+</div></details>
+</div></details>
+</div></details>
+</div></div></section>
+</main><footer class="site-footer"><div class="container footer-main"><a class="brand" href="index.html"><span class="brand-mark">O</span><span>OVERWORLD.<small>A MINECRAFT FIELD GUIDE</small></span></a><p class="footer-description">A fan-made field guide for curious players and worlds still waiting to be built.</p><nav class="footer-links" aria-label="Explore the guide"><a href="index.html">Home</a><a href="story.html">The Story</a><a href="mobs.html">Characters &amp; Mobs</a><a href="shaders.html">Shaders</a><a href="farlands.html">Far Lands</a><a href="community.html">Community</a><a href="youtubers.html">YouTubers</a><a href="servers.html">Servers &amp; Multiplayer</a><a href="lore.html">Lore</a><a href="how-to-play.html">How to Play</a><a href="updates.html">Updates &amp; Future</a><a href="music.html">Music &amp; Sound</a><a href="impact.html">Impact</a><a href="similarities.html">Minecraft &amp; Terraria</a><a href="technical.html">Technical side</a></nav><div class="footer-outbound"><span>OFFICIAL LINKS</span><a href="https://www.minecraft.net/en-us" target="_blank" rel="noopener noreferrer">Minecraft.net ↗</a></div></div><div class="container footer-bottom"><span>© <span data-year></span> Overworld Field Guide · An unofficial fan project.</span><a href="#main">Back to spawn ↑</a></div></footer><a class="back-to-top" href="#main" aria-label="Back to top">↑</a>
+</body></html>
